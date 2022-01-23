@@ -2,34 +2,34 @@
 using namespace std;
 
 int main(){
-    int n = 1330;
+    int n = 1375;
     int notes_hun, notes_fif, notes_twen, notes_one;
 
-    if (n>100)
+    if (n>=100)
     {
         notes_hun = n/100;
-        cout<<notes_hun<<endl;
+        cout<<"Hunderds : "<<notes_hun<<endl;
         n = n%100;
     }
-    if(100>n>50)
+    if(100>n && n>=50)
     {
         notes_fif = n/50;
-        cout<<notes_fif<<endl;
+        cout<<"Fifties : "<<notes_fif<<endl;
         n = n%50;
     }
-    if (50>n>20)
+    if (50>n && n>=20)
     {
         notes_twen = n/20;
-        cout<<notes_twen<<endl;
+        cout<<"Twienties : "<<notes_twen<<endl;
         n = n%20;
     }
-    if (20>n>1)
+    if (20>n && n>=1)
     {
         notes_one = n/1;
-        cout<<notes_one<<endl;
+        cout<<"Ones : "<<notes_one<<endl;
         n = n%1;
     }
-    // cout<<(notes_hun+notes_fif+notes_twen+notes_one)<<endl;   
+    return 0;// cout<<(notes_hun+notes_fif+notes_twen+notes_one)<<endl;   
 }
 
 
