@@ -1,3 +1,4 @@
+// Binary Search : find the peak mountain index.
 #include<iostream>
 using namespace std;
 
